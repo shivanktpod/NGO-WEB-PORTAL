@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<TITLE>MEMBERSHIP PORTAL</TITLE>
+<LINK REL="">
+<style type="text/css">
+	body {
+ 				background-image: url(sadness.jpg);
+ 				background-position:fixed;
+ 				position: absolute;
+
+ 				background-size: 100%;
+ 				top: 50%;
+ 				left: 50%;
+ 				right: 50%;
+ 				transform: translate(-50%,-50%);
+ 				width: 850px;
+ 				background-repeat: no-repeat;
+ 				
+			}
+			
+</style>
+</HEAD>
+<BODY>
+
+<BR>
+<FORM METHOD="GET" ACTION="f.jsp" TARGET="_blank" NAME="FORM1" AUTOCOMPLETE="YES" ENCTYPE="multipart" NOVALIDATE>
+<FIELDSET>
+<LEGEND>Personal Details</LEGEND>
+<LABEL FOR="T1">Member Name:</LABEL>
+<INPUT TYPE="text" maxlength="20" NAME="T1" ID="T1"><br><br>
+
+<LABEL FOR="EMAIL">E-mail: &nbsp </LABEL>
+<INPUT TYPE="EMAIL" NAME="EMAIL" ID="EMAIL" REQUIRED><br><br>
+
+<LABEL FOR="CNO">Contact Number: &nbsp</LABEL>
+<INPUT TYPE="NUMBER" NAME="CNO" ID="CNO" MIN="5" MAX="11">
+<BR>
+</FIELDSET>
+<BR><br>
+<FIELDSET>
+<LABEL FOR="ADDRESS" >Address: &nbsp </LABEL>
+<TEXTAREA ROWS="2" COLS="20" NAME="ADDRESS" ID="ADDRESS">
+</TEXTAREA>
+<br><br>
+
+
+<LABEL FOR="C1">State: &nbsp</LABEL>
+<SELECT NAME="C1"  ID="C1">
+ <OPTION VALUE="">SELECT</OPTION>
+ <OPTGROUP LABEL="BIRTH CITY">
+       <OPTION VALUE="ALD">ALLAHABAD</OPTION>
+       <OPTION VALUE="SPN" >SHAHJAHANPUR</OPTION>
+       <OPTION VALUE="AGRA">AGRA</OPTION>
+       <OPTION VALUE="GZB">GAZIABAD</OPTION>
+</OPTGROUP>
+
+</SELECT><br><br>
+
+<LABEL FOR="DOB">Date Of Birth: &nbsp</LABEL>
+<INPUT TYPE="date" name="DOB" ID="DOB">
+<BR><br>
+
+<LABEL FOR="GENDER">Gender: &nbsp</LABEL>
+<INPUT TYPE="RADIO" NAME="GENDER" VALUE="M">MALE
+<INPUT TYPE="RADIO" NAME="GENDER" VALUE="F">FEMALE
+<BR>
+<br>
+<LABEL FOR="CHOICE">Choose your day for teaching:</LABEL><br>
+<INPUT TYPE="CHECKBOX" VALUE="M" ID="M">MONDAY
+<INPUT TYPE="CHECKBOX" VALUE="TUE" ID="TUE">TUESDAY
+<INPUT TYPE="CHECKBOX" VALUE="WED" ID="WED">WEDNESDAY
+<INPUT TYPE="CHECKBOX" VALUE="THURS" ID="THURS">THURSDAY
+<INPUT TYPE="CHECKBOX" VALUE="FRI" ID="FRI">FRIDAY
+<INPUT TYPE="CHECKBOX" VALUE="SAT" ID="PYTHON">SATURDAY
+<INPUT TYPE="CHECKBOX" VALUE="SUN" ID="PYTHON">SUNDAY
+
+
+<BR>
+<br>
+
+<LABEL FOR="CHOICE">Choose your subject for teaching:</LABEL><BR>
+<INPUT TYPE="CHECKBOX" VALUE="H" ID="H">HINDI
+<INPUT TYPE="CHECKBOX" VALUE="E" ID="E">ENGLISH
+<INPUT TYPE="CHECKBOX" VALUE="M" ID="M">MATHS
+<INPUT TYPE="CHECKBOX" VALUE="S" ID="S">SCIENCE
+
+
+
+<BR>
+
+
+<br>
+
+
+<LABEL FOR="IMAGE">Upload Image: &nbsp</LABEL>
+<INPUT TYPE="FILE" NAME="F1" ID="F1">
+<BR><BR>
+</FIELDSET>
+<center>
+<INPUT TYPE="SUBMIT" VALUE="SAVE">
+<INPUT TYPE="RESET" VALUE="RESET">
+</center>
+</FORM>
+
+</BODY>
+</HTML>
